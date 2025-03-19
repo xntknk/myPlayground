@@ -1,0 +1,63 @@
+<!-- Exercise 1
+<button id="countBtn">Click Me</button>
+<h1 id="message"></h1>
+
+<script>
+    let count = 0;
+    document.getElementById("countBtn").addEventListener("click", function(){
+        count += 1;
+        document.getElementById("message").innerText = `Click counter = ${count}`;
+    })
+</script> -->
+
+<!-- Exercise 2
+<input type="text" id="emailInput" placeholder="Enter Email">
+<p id="emailStatus"></p>
+
+<script>
+    document.getElementById("emailInput").addEventListener("input", function() {
+        const email = this.value;
+        const status = document.getElementById("emailStatus");
+
+        if(email.includes("@")){
+            status.textContent = "Valid Email";
+        }else {
+            status.textContent = "";
+        }
+        
+    })
+</script> -->
+
+<!-- Exercise 3
+<form id="myForm">
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button type="submit">Login</button>
+</form>
+<p id="result"></p>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Stops page reload
+        document.getElementById("result").innerText = "Logged In!";
+    });
+</script> -->
+
+<!-- Exercise 4
+<input type="number" id="ageInput" placeholder="Enter your age">
+<button id="submitBtn">Submit</button>
+<p id="ageMessage" style="color: red;"></p>
+
+<script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+        let age = document.getElementById("ageInput").value;
+        
+        if (age < 18) {
+            document.getElementById("ageMessage").innerText = "You must be 18 or older!";
+        } else {
+            document.getElementById("ageMessage").innerText = "Valid Age!"
+            document.getElementById("ageMessage").style.color = "green";
+        }
+    });
+</script> -->
+

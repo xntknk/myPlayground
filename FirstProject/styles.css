@@ -1,0 +1,128 @@
+body {
+  border: none;
+  cursor: default;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 5px; /* Reduce space between buttons */
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
+#addTaskBtn {
+  background-color: #007bff;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+#clearTaskBtn {
+  background-color: #dc3545;
+}
+
+#clearTaskBtn:hover {
+  background-color: #b02a37;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px; /* Reduce gap between buttons */
+}
+
+.deleteBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.deleteBtn:hover {
+  background-color: darkred;
+}
+
+.completeBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.completeBtn:hover {
+  background-color: darkgreen;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+.task-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab; /* Show grab cursor */
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item:active {
+  cursor: grabbing;
+  opacity: 0.5; /* Reduce opacity while dragging */
+}
+
+.deleteBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.completeBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
